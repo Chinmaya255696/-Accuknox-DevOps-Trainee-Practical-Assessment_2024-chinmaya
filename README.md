@@ -128,17 +128,20 @@ jobs:
 
    ```sh
    sudo apt-get install openssl
-```
+  ```
+
 2.Generate Private Key:
    
     ```sh
     openssl genrsa -out server.key 2048
 ```
+
 3.Generate Certificate Signing Request (CSR):
 
       ```sh
     openssl req -new -key server.key -out server.csr
 ```
+
 4.Self-Sign Certificate:   
 
      ```sh

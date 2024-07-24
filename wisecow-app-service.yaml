@@ -1,0 +1,12 @@
+piVersion: v1
+kind: Service
+metadata:
+  name: wisecow-service
+spec:
+  type: NodePort
+  selector:
+    app: wisecow
+  ports:
+    - port: 4499
+      targetPort: 4499
+      nodePort: 31507
